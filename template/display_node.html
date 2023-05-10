@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Search Results</h2>
+
+<p><strong>Name:</strong> {{ node.name }}</p>
+<p><strong>ID:</strong> {{ node.id }}</p>
+{% if parent_id %}
+<p><strong>Parent ID:</strong> {{ parent_id }}</p>
+{% else %}
+<p><strong>Parent ID:</strong> None</p>
+{% endif %}
+{% endblock %}

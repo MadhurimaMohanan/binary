@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Account Created{% endblock %}
+
+{% block content %}
+    <h1>Account Created Successfully</h1>
+    <p>Your account with ID <strong>{{ account_id }}</strong> has been created.</p>
+    <p>Name: <strong>{{ name }}</strong></p>
+    <p>Parent ID: <strong>{{ parent_id }}</strong></p>
+    <p><a href="#">Return to Home</a></p>
+{% endblock %}

@@ -1,0 +1,16 @@
+<!-- display_tree.html -->
+
+{% extends 'base.html' %}
+{% load mptt_tags %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-6">
+            {% recursetree nodes %}
+                <ul>
+                    <li>{{ node.name }}</li>
+                </ul>
+            {% endrecursetree %}
+        </div>
+    </div>
+{% endblock %}
